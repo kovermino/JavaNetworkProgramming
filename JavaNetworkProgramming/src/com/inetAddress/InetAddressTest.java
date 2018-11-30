@@ -3,7 +3,7 @@ package com.inetAddress;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-/*
+/**
  * 포스팅 주소
  * https://blog.naver.com/jwyoon25/221305933898
  */

@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-/*
+/**
  * 포스팅 주소
  * https://blog.naver.com/jwyoon25/221300691133
  */
