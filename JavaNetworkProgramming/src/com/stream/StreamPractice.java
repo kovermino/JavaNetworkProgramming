@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 /**
- * 포스팅 주소
+ * posting URL
  * https://blog.naver.com/jwyoon25/221300691133
  */
 
@@ -15,16 +15,16 @@ public class StreamPractice {
 
 	public static void main(String[] args) {
 
-		// 저장할 객체와 파일이 저장된 경로
+		// object to store
 		NestedClass nc = new NestedClass();
 		String path = "C:\\nc.java";
 			
-		// FileOutputStream:  파일에 바이트 단위로 쓴다.
-		// ObjectOutputStream: FileOutputStream에 객체단위로 쓴다.
+		// FileOutputStream: write to file by byte.
+		// ObjectOutputStream: write to FileOutputStream by object.
 		try (FileOutputStream fs = new FileOutputStream(path);
 			 ObjectOutputStream os = new ObjectOutputStream(fs)) {
 
-			// 객체를 저장
+			// store object
 			os.writeObject(nc);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

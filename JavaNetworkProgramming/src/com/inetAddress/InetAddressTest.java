@@ -4,7 +4,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
- * 포스팅 주소
+ * posting URL
  * https://blog.naver.com/jwyoon25/221305933898
  */
 
@@ -13,34 +13,34 @@ public class InetAddressTest {
 	public static void main(String[] args) {
 		
 		try {
-			// 네이버의 주소를 도메인으로 지정
+			// declare domain address with naver homepage
 			String domain = "www.naver.com";
 			
-			// 도메인(네이버)으로부터 호스트네임과 주소를 얻어온다.
+			// get hostname and address from domain(naver) -> InetAddress
 			InetAddress inetAddr = InetAddress.getByName(domain);
 			
-			// 얻어온 InetAddress로부터 네이버의 호스트네임과 주소를 얻어온다.
+			// get hostname and address of naver homepage from InetAddress 
 			String hostName = inetAddr.getHostName();
 			String hostAddress = inetAddr.getHostAddress();
 			
-			// 출력
-			System.out.println("호스트네임: "+hostName);
-			System.out.println("주소: "+hostAddress);
+			// print
+			System.out.println("hostname: "+hostName);
+			System.out.println("address: "+hostAddress);
 			
-			// 로컬호스트(현재 컴퓨터)의 호스트네임과 주소를 얻어온다.
+			// get hostname and address of localhost(this computer)
 			InetAddress localHost = InetAddress.getLocalHost();
 			
-			// 얻어온 InetAddress로부터 로컬 호스트네임과 주소를 얻어온다.
+			// get hostname and address of localhost from InetAddress
 			String localName = localHost.getHostName();
 			String localAddress = localHost.getHostAddress();
 			
-			// 출력
-			System.out.println("로컬호스트네임: "+localName);
-			System.out.println("로컬주소: "+localAddress);
+			// print
+			System.out.println("localname: "+localName);
+			System.out.println("local address "+localAddress);
 			
-			// 바이트배열로 얻어올 수도 있다.
+			// we can also get address of localhost with byte array
 			byte[] bAddr = localHost.getAddress();
-			System.out.println(bAddr.length+"개의 바이트 배열을 얻어왔다.");
+			System.out.println("We get "+bAddr.length+" of byte array");
 			for(byte b: bAddr) {
 				System.out.print((b<0?b+225:b)+".");
 			}
