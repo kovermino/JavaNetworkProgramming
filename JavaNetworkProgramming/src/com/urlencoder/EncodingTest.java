@@ -3,6 +3,11 @@ package com.urlencoder;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
+/**
+ * posting URL
+ * https://blog.naver.com/jwyoon25/221307228979
+ */
+
 public class EncodingTest {
 
 	public static void main(String[] args) {

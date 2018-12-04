@@ -4,6 +4,11 @@ import java.net.CookiePolicy;
 import java.net.HttpCookie;
 import java.net.URI;
 
+/**
+ * posting URL
+ * https://blog.naver.com/jwyoon25/221308504203
+ */
+
 public class NoGovermentCookie implements CookiePolicy {
 	@Override
 	public boolean shouldAccept(URI uri, HttpCookie cookie) {

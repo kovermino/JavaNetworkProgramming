@@ -1,7 +1,13 @@
 package com.url;
 
 import java.net.MalformedURLException;
+
 import java.net.URL;
+
+/**
+ * posting URL
+ * https://blog.naver.com/jwyoon25/221306419938
+ */
 
 public class URLMeta {
 	
